@@ -1,7 +1,9 @@
 from lib.grammar_stats import *
 
 def test_class_initiates():
-    pass
+    grammar = GrammarStats()
+    assert grammar.texts_tested == 0
+    assert grammar.passed_check == 0
 
 def test_check_capital_and_punct_true():
     grammar = GrammarStats()
